@@ -1,0 +1,90 @@
+/*-----------------
+Fonts
+-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/*-----------------
+Global Css
+-------------------*/
+:root {
+    --Soft-Red: #aa1d21;
+    --Soft-White: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+*::selection {
+    background: var(--Soft-Red);
+    color: var(--Soft-White);
+}
+
+/*-----------------
+App
+-------------------*/
+.App {
+    background-color: var(--Soft-White);
+    padding-top: 36px;
+    text-align: center;
+}
+
+/*-----------------
+Consulta
+-------------------*/
+.container {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form-control {
+    text-align: left;
+    margin-bottom: 15px;
+    width: 350px;
+}
+
+.container .form-label {
+    width: auto;
+    color: var(--Soft-Red)
+}
+
+.container .information {
+    max-width: inherit;
+    font-size: 18px;
+    margin-top: 35px;
+    color: var(--Soft-Red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.container .btn-consulta {
+    font-size: 20px;
+    color: var(--Soft-White);
+    background: var(--Soft-Red);
+    cursor: pointer;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px -3px var(--Soft-Red)
+}
+
+.container .btn-consulta:hover {
+    color: var(--Soft-Red);
+    background: var(--Soft-White);
+}
